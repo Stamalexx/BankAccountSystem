@@ -9,6 +9,14 @@ public abstract class BankAccount {
         this.balance = balance;
         this.accountHolderName = accountHolderName;
     }
+
+    public void deposit(double amount){
+        this.balance += amount;
+    }
+
+    public abstract void withdraw(double amount);
+
+
     public String getAccountNumer() {
         return accountNumer;
     }
