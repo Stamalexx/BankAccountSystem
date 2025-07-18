@@ -13,11 +13,13 @@ public class InputUtils {
 
     public int getInt(){
         int input = sc.nextInt();
+        sc.nextLine();
         return input;    
     }
 
     public double getDouble() {
         double input = sc.nextDouble();
+        sc.nextLine();
         return input;
     }
 
