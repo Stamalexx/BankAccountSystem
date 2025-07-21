@@ -29,7 +29,8 @@ public class BankService {
         }
 
         else if (type == "1"){
-            targetAccount.withdraw(amount); 
+            targetAccount.withdraw(amount);
+    
         }
 
         else if (type == "2"){

@@ -5,6 +5,7 @@ public class Main {
         boolean isOn = true;
         BankService bService = new BankService();
         Scanner sc = new Scanner(System.in);
+        InputUtils inputs = new InputUtils();
         System.out.println("Welcome to bankPasok");
         // String [] choiceList = {"1","2","3","4","5"};
         while (isOn) {
@@ -24,12 +25,12 @@ public class Main {
                     break;
                 case "2":
                     System.out.println("Enter the amount that you want to deposit");
-                    bService.changeAmount(sc.nextInt(), "2");
+                    bService.changeAmount(inputs.getInt(), "2");
                     break;
 
                 case "3":
                     System.out.println("Enter the amount that you want to withdraw");
-                    bService.changeAmount(sc.nextInt(), "1");
+                    bService.changeAmount(inputs.getInt(), "1");
                     sc.nextLine();
                     break;
 
